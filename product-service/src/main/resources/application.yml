@@ -1,0 +1,9 @@
+server:
+  port: 8084
+spring:
+  application:
+    name: product-service
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${NACOS_SERVER_ADDR}

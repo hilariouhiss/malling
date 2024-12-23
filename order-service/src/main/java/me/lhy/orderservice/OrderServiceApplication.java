@@ -1,17 +1,15 @@
-package me.lhy.userservice;
+package me.lhy.orderservice;
 
-import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @SpringBootApplication
-@EnableDiscoveryClient // 服务注册与发现
-@MapperScan("me.lhy.userservice.mapper")
-public class UserServiceApplication {
+@EnableDiscoveryClient
+public class OrderServiceApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(UserServiceApplication.class, args);
+        SpringApplication.run(OrderServiceApplication.class, args);
     }
 
 }
