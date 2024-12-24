@@ -1,6 +1,5 @@
 server:
-  port: 8081
-
+  port: 0
 spring:
   application:
     name: log-service
@@ -8,3 +7,8 @@ spring:
     nacos:
       discovery:
         server-addr: ${NACOS_SERVER_ADDR}
+      config:
+        server-addr: ${NACOS_SERVER_ADDR}
+  config:
+    import:
+      - nacos:log.yaml
